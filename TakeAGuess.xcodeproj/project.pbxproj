@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48F4EC751CCA033F00882960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4EC741CCA033F00882960 /* AppDelegate.swift */; };
+		48F4EC771CCA033F00882960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4EC761CCA033F00882960 /* ViewController.swift */; };
+		48F4EC7A1CCA033F00882960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4EC781CCA033F00882960 /* Main.storyboard */; };
+		48F4EC7C1CCA033F00882960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F4EC7B1CCA033F00882960 /* Assets.xcassets */; };
+		48F4EC7F1CCA033F00882960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4EC7D1CCA033F00882960 /* LaunchScreen.storyboard */; };
+		48F4EC841CCA033F00882960 /* TakeAGuess WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 48F4EC831CCA033F00882960 /* TakeAGuess WatchKit App.app */; };
+		48F4EC8A1CCA033F00882960 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F4EC881CCA033F00882960 /* Interface.storyboard */; };
+		48F4EC8C1CCA033F00882960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F4EC8B1CCA033F00882960 /* Assets.xcassets */; };
+		48F4EC931CCA033F00882960 /* TakeAGuess WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48F4EC921CCA033F00882960 /* TakeAGuess WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48F4EC981CCA033F00882960 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4EC971CCA033F00882960 /* InterfaceController.swift */; };
+		48F4EC9A1CCA033F00882960 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4EC991CCA033F00882960 /* ExtensionDelegate.swift */; };
+		48F4EC9C1CCA033F00882960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F4EC9B1CCA033F00882960 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48F4EC851CCA033F00882960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F4EC691CCA033F00882960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48F4EC821CCA033F00882960;
+			remoteInfo = "TakeAGuess WatchKit App";
+		};
+		48F4EC941CCA033F00882960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F4EC691CCA033F00882960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48F4EC911CCA033F00882960;
+			remoteInfo = "TakeAGuess WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48F4ECA31CCA033F00882960 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				48F4EC931CCA033F00882960 /* TakeAGuess WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4ECA71CCA033F00882960 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				48F4EC841CCA033F00882960 /* TakeAGuess WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		48F4EC711CCA033F00882960 /* TakeAGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeAGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F4EC741CCA033F00882960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48F4EC761CCA033F00882960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48F4EC791CCA033F00882960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48F4EC7B1CCA033F00882960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48F4EC7E1CCA033F00882960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48F4EC801CCA033F00882960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F4EC831CCA033F00882960 /* TakeAGuess WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TakeAGuess WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F4EC891CCA033F00882960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		48F4EC8B1CCA033F00882960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48F4EC8D1CCA033F00882960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F4EC921CCA033F00882960 /* TakeAGuess WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TakeAGuess WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F4EC971CCA033F00882960 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		48F4EC991CCA033F00882960 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		48F4EC9B1CCA033F00882960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48F4EC9D1CCA033F00882960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F4EC6E1CCA033F00882960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4EC8F1CCA033F00882960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48F4EC681CCA033F00882960 = {
+			isa = PBXGroup;
+			children = (
+				48F4EC731CCA033F00882960 /* TakeAGuess */,
+				48F4EC871CCA033F00882960 /* TakeAGuess WatchKit App */,
+				48F4EC961CCA033F00882960 /* TakeAGuess WatchKit Extension */,
+				48F4EC721CCA033F00882960 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48F4EC721CCA033F00882960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F4EC711CCA033F00882960 /* TakeAGuess.app */,
+				48F4EC831CCA033F00882960 /* TakeAGuess WatchKit App.app */,
+				48F4EC921CCA033F00882960 /* TakeAGuess WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48F4EC731CCA033F00882960 /* TakeAGuess */ = {
+			isa = PBXGroup;
+			children = (
+				48F4EC741CCA033F00882960 /* AppDelegate.swift */,
+				48F4EC761CCA033F00882960 /* ViewController.swift */,
+				48F4EC781CCA033F00882960 /* Main.storyboard */,
+				48F4EC7B1CCA033F00882960 /* Assets.xcassets */,
+				48F4EC7D1CCA033F00882960 /* LaunchScreen.storyboard */,
+				48F4EC801CCA033F00882960 /* Info.plist */,
+			);
+			path = TakeAGuess;
+			sourceTree = "<group>";
+		};
+		48F4EC871CCA033F00882960 /* TakeAGuess WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				48F4EC881CCA033F00882960 /* Interface.storyboard */,
+				48F4EC8B1CCA033F00882960 /* Assets.xcassets */,
+				48F4EC8D1CCA033F00882960 /* Info.plist */,
+			);
+			path = "TakeAGuess WatchKit App";
+			sourceTree = "<group>";
+		};
+		48F4EC961CCA033F00882960 /* TakeAGuess WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48F4EC971CCA033F00882960 /* InterfaceController.swift */,
+				48F4EC991CCA033F00882960 /* ExtensionDelegate.swift */,
+				48F4EC9B1CCA033F00882960 /* Assets.xcassets */,
+				48F4EC9D1CCA033F00882960 /* Info.plist */,
+			);
+			path = "TakeAGuess WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48F4EC701CCA033F00882960 /* TakeAGuess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F4ECA81CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess" */;
+			buildPhases = (
+				48F4EC6D1CCA033F00882960 /* Sources */,
+				48F4EC6E1CCA033F00882960 /* Frameworks */,
+				48F4EC6F1CCA033F00882960 /* Resources */,
+				48F4ECA71CCA033F00882960 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F4EC861CCA033F00882960 /* PBXTargetDependency */,
+			);
+			name = TakeAGuess;
+			productName = TakeAGuess;
+			productReference = 48F4EC711CCA033F00882960 /* TakeAGuess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48F4EC821CCA033F00882960 /* TakeAGuess WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F4ECA41CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess WatchKit App" */;
+			buildPhases = (
+				48F4EC811CCA033F00882960 /* Resources */,
+				48F4ECA31CCA033F00882960 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F4EC951CCA033F00882960 /* PBXTargetDependency */,
+			);
+			name = "TakeAGuess WatchKit App";
+			productName = "TakeAGuess WatchKit App";
+			productReference = 48F4EC831CCA033F00882960 /* TakeAGuess WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		48F4EC911CCA033F00882960 /* TakeAGuess WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F4ECA01CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess WatchKit Extension" */;
+			buildPhases = (
+				48F4EC8E1CCA033F00882960 /* Sources */,
+				48F4EC8F1CCA033F00882960 /* Frameworks */,
+				48F4EC901CCA033F00882960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TakeAGuess WatchKit Extension";
+			productName = "TakeAGuess WatchKit Extension";
+			productReference = 48F4EC921CCA033F00882960 /* TakeAGuess WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48F4EC691CCA033F00882960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jai Khanna";
+				TargetAttributes = {
+					48F4EC701CCA033F00882960 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9629Q2KYCZ;
+					};
+					48F4EC821CCA033F00882960 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9629Q2KYCZ;
+					};
+					48F4EC911CCA033F00882960 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9629Q2KYCZ;
+					};
+				};
+			};
+			buildConfigurationList = 48F4EC6C1CCA033F00882960 /* Build configuration list for PBXProject "TakeAGuess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48F4EC681CCA033F00882960;
+			productRefGroup = 48F4EC721CCA033F00882960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48F4EC701CCA033F00882960 /* TakeAGuess */,
+				48F4EC821CCA033F00882960 /* TakeAGuess WatchKit App */,
+				48F4EC911CCA033F00882960 /* TakeAGuess WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48F4EC6F1CCA033F00882960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4EC7F1CCA033F00882960 /* LaunchScreen.storyboard in Resources */,
+				48F4EC7C1CCA033F00882960 /* Assets.xcassets in Resources */,
+				48F4EC7A1CCA033F00882960 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4EC811CCA033F00882960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4EC8C1CCA033F00882960 /* Assets.xcassets in Resources */,
+				48F4EC8A1CCA033F00882960 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4EC901CCA033F00882960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4EC9C1CCA033F00882960 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48F4EC6D1CCA033F00882960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4EC771CCA033F00882960 /* ViewController.swift in Sources */,
+				48F4EC751CCA033F00882960 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F4EC8E1CCA033F00882960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F4EC9A1CCA033F00882960 /* ExtensionDelegate.swift in Sources */,
+				48F4EC981CCA033F00882960 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48F4EC861CCA033F00882960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48F4EC821CCA033F00882960 /* TakeAGuess WatchKit App */;
+			targetProxy = 48F4EC851CCA033F00882960 /* PBXContainerItemProxy */;
+		};
+		48F4EC951CCA033F00882960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48F4EC911CCA033F00882960 /* TakeAGuess WatchKit Extension */;
+			targetProxy = 48F4EC941CCA033F00882960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48F4EC781CCA033F00882960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F4EC791CCA033F00882960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48F4EC7D1CCA033F00882960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F4EC7E1CCA033F00882960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		48F4EC881CCA033F00882960 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F4EC891CCA033F00882960 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48F4EC9E1CCA033F00882960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48F4EC9F1CCA033F00882960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48F4ECA11CCA033F00882960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TakeAGuess WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkhanna.TakeAGuess.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		48F4ECA21CCA033F00882960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TakeAGuess WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkhanna.TakeAGuess.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		48F4ECA51CCA033F00882960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TakeAGuess_WatchKit_Extension;
+				INFOPLIST_FILE = "TakeAGuess WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkhanna.TakeAGuess.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		48F4ECA61CCA033F00882960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TakeAGuess_WatchKit_Extension;
+				INFOPLIST_FILE = "TakeAGuess WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkhanna.TakeAGuess.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		48F4ECA91CCA033F00882960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TakeAGuess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkhanna.TakeAGuess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		48F4ECAA1CCA033F00882960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TakeAGuess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkhanna.TakeAGuess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48F4EC6C1CCA033F00882960 /* Build configuration list for PBXProject "TakeAGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4EC9E1CCA033F00882960 /* Debug */,
+				48F4EC9F1CCA033F00882960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F4ECA01CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4ECA11CCA033F00882960 /* Debug */,
+				48F4ECA21CCA033F00882960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48F4ECA41CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4ECA51CCA033F00882960 /* Debug */,
+				48F4ECA61CCA033F00882960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48F4ECA81CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F4ECA91CCA033F00882960 /* Debug */,
+				48F4ECAA1CCA033F00882960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48F4EC691CCA033F00882960 /* Project object */;
+}
