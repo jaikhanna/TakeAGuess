@@ -532,6 +532,7 @@
 				48F4ECA21CCA033F00882960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48F4ECA41CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +541,7 @@
 				48F4ECA61CCA033F00882960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48F4ECA81CCA033F00882960 /* Build configuration list for PBXNativeTarget "TakeAGuess" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +550,7 @@
 				48F4ECAA1CCA033F00882960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,15 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TakeAGuess_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Your guess is 3" id="QSk-97-6SO"/>
+                        <button width="100" height="100" alignment="center" verticalAlignment="center" title="Button" backgroundImage="play" id="TcO-0e-h7F">
+                            <color key="backgroundColor" red="0.2023120259" green="0.76977465570000003" blue="0.81547900880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                            <variation key="device=watch42mm" height="56.5" width="57">
+                                <nil key="title"/>
+                            </variation>
+                            <connections>
+                                <action selector="playGuess" destination="AgC-eL-Hgc" id="0GR-hd-iLZ"/>
+                            </connections>
+                        </button>
+                        <slider width="1" alignment="left" value="0.59999999999999998" steps="5" id="kmx-xD-zzZ">
+                            <color key="color" red="0.22801743790000001" green="0.94308517879999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="playerGuessFromSlider:" destination="AgC-eL-Hgc" id="rvM-oX-Rzr"/>
+                            </connections>
+                        </slider>
+                        <label alignment="center" verticalAlignment="bottom" text="Press guess to play!" minimumScaleFactor="0.5" id="OXM-sd-PCS"/>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="QSk-97-6SO"/>
+                            <exclude reference="TcO-0e-h7F"/>
+                            <exclude reference="kmx-xD-zzZ"/>
+                            <exclude reference="OXM-sd-PCS"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="QSk-97-6SO"/>
+                            <include reference="TcO-0e-h7F"/>
+                            <include reference="kmx-xD-zzZ"/>
+                            <include reference="OXM-sd-PCS"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="guessSlider" destination="kmx-xD-zzZ" id="fFe-gZ-W6A"/>
+                        <outlet property="playerGuess" destination="QSk-97-6SO" id="o2W-jv-jKk"/>
+                        <outlet property="playerResult" destination="OXM-sd-PCS" id="UMf-Ee-TdM"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="331.28205128205133" y="296.84615384615387"/>
         </scene>
     </scenes>
 </document>

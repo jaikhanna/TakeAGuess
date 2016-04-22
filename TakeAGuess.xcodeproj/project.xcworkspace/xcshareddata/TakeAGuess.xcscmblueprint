@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E6356C3BD8BCFA0BB896BFC66E917DC299564EF0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E6356C3BD8BCFA0BB896BFC66E917DC299564EF0" : 0,
+    "81B37AE36971FE27FCFEF30DC1993FF445AC005A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6DDE834D-B413-4631-8499-0E873BE24415",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E6356C3BD8BCFA0BB896BFC66E917DC299564EF0" : "TakeAGuess\/",
+    "81B37AE36971FE27FCFEF30DC1993FF445AC005A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TakeAGuess",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TakeAGuess.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jaikhanna\/FasType",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81B37AE36971FE27FCFEF30DC1993FF445AC005A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jaikhanna\/TakeAGuess.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6356C3BD8BCFA0BB896BFC66E917DC299564EF0"
+    }
+  ]
+}

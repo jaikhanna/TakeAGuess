@@ -16,11 +16,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="papers.co-vc80-triangles-lights-pattern-34-iphone6-plus-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="6oh-tX-ij3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="O8X-DT-6kS">
+                                <rect key="frame" x="196" y="65" width="208" height="31"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="playerGuessFromSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="nxI-Qi-S5T"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1n-s4-vOJ">
+                                <rect key="frame" x="124" y="145" width="352" height="87"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Your guess is 3">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="40" name="Noteworthy-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPl-Jt-6FA">
+                                <rect key="frame" x="124" y="473" width="352" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="Wcz-lA-XcZ"/>
+                                    <constraint firstAttribute="height" constant="87" id="fnH-vW-PCC"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Press Play to start">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="42" name="Noteworthy-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-Hd-Mt3">
+                                <rect key="frame" x="242" y="299" width="116" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="JWz-IX-fmS"/>
+                                    <constraint firstAttribute="width" constant="116" id="i7C-6G-KBo"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="play1"/>
+                                <connections>
+                                    <action selector="playGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiD-l9-0tV"/>
+                                    <action selector="playerGuessFromSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dE-Yb-9Bx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YPl-Jt-6FA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3aj-X8-VsB"/>
+                            <constraint firstItem="O8X-DT-6kS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PYi-pv-BMz"/>
+                            <constraint firstItem="mmO-Hd-Mt3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJi-xK-Xz6"/>
+                            <constraint firstItem="6oh-tX-ij3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="agT-IG-phd"/>
+                            <constraint firstItem="Q1n-s4-vOJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kul-SJ-81k"/>
+                            <constraint firstItem="6oh-tX-ij3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pR4-m9-NOr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="guessSlider" destination="O8X-DT-6kS" id="wG4-KW-dWf"/>
+                        <outlet property="playButton" destination="mmO-Hd-Mt3" id="Ejo-41-ztZ"/>
+                        <outlet property="playerGuess" destination="Q1n-s4-vOJ" id="cej-eu-lxk"/>
+                        <outlet property="playerResult" destination="YPl-Jt-6FA" id="O7a-Cg-1mZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="492" y="324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="papers.co-vc80-triangles-lights-pattern-34-iphone6-plus-wallpaper" width="500" height="889"/>
+        <image name="play1" width="1033" height="1054"/>
+    </resources>
 </document>
