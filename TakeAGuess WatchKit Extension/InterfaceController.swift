@@ -18,6 +18,7 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBOutlet var playerResult: WKInterfaceLabel!
+    @IBOutlet var playButton: WKInterfaceButton!
     
     var guessValue: Int = 0
     
@@ -32,7 +33,7 @@ class InterfaceController: WKInterfaceController {
         
         
         if guessValue == targetValue{
-            playerResult.setText("Awesome! You guessed it!")
+            playerResult.setText("Correct!")
         }
         else{
             playerResult.setText("Oops. Guess again.")

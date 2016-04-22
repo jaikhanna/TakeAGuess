@@ -10,49 +10,66 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TakeAGuess_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Your guess is 3" id="QSk-97-6SO"/>
-                        <button width="100" height="100" alignment="center" verticalAlignment="center" title="Button" backgroundImage="play" id="TcO-0e-h7F">
-                            <color key="backgroundColor" red="0.2023120259" green="0.76977465570000003" blue="0.81547900880000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="font" type="system" pointSize="10"/>
-                            <variation key="device=watch42mm" height="56.5" width="57">
-                                <nil key="title"/>
+                        <group height="100" alignment="left" backgroundImage="back" contentMode="scaleAspectFill" animationDuration="2" layout="vertical" id="5T4-06-ln9">
+                            <items>
+                                <slider height="100" alignment="left" value="0.59999999999999998" steps="5" id="kmx-xD-zzZ">
+                                    <color key="color" red="0.22801743790000001" green="0.94308517879999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" height="43"/>
+                                    <connections>
+                                        <action selector="playerGuessFromSlider:" destination="AgC-eL-Hgc" id="rvM-oX-Rzr"/>
+                                    </connections>
+                                </slider>
+                                <label height="100" alignment="center" verticalAlignment="center" text="Your guess is 3" textAlignment="center" baselineAdjustment="alignCenters" id="QSk-97-6SO">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                    <variation key="device=watch42mm" height="36.5"/>
+                                </label>
+                                <button width="100" height="100" alignment="center" verticalAlignment="bottom" alpha="0.94999999999999996" title="Button" backgroundImage="play2" id="TcO-0e-h7F">
+                                    <color key="backgroundColor" red="0.2023120259" green="0.76977465570000003" blue="0.81547900880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <variation key="device=watch42mm" height="60.5" width="42">
+                                        <nil key="title"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="playGuess" destination="AgC-eL-Hgc" id="0GR-hd-iLZ"/>
+                                    </connections>
+                                </button>
+                                <label width="100" alignment="right" verticalAlignment="bottom" text="Press guess to play!" textAlignment="center" minimumScaleFactor="0.5" id="OXM-sd-PCS">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                    <variation key="device=watch42mm" width="156"/>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="kmx-xD-zzZ"/>
+                                    <exclude reference="QSk-97-6SO"/>
+                                    <exclude reference="TcO-0e-h7F"/>
+                                    <exclude reference="OXM-sd-PCS"/>
+                                </mask>
                             </variation>
-                            <connections>
-                                <action selector="playGuess" destination="AgC-eL-Hgc" id="0GR-hd-iLZ"/>
-                            </connections>
-                        </button>
-                        <slider width="1" alignment="left" value="0.59999999999999998" steps="5" id="kmx-xD-zzZ">
-                            <color key="color" red="0.22801743790000001" green="0.94308517879999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="playerGuessFromSlider:" destination="AgC-eL-Hgc" id="rvM-oX-Rzr"/>
-                            </connections>
-                        </slider>
-                        <label alignment="center" verticalAlignment="bottom" text="Press guess to play!" minimumScaleFactor="0.5" id="OXM-sd-PCS"/>
+                            <variation key="device=watch42mm" height="171.5">
+                                <mask key="items">
+                                    <include reference="kmx-xD-zzZ"/>
+                                    <include reference="QSk-97-6SO"/>
+                                    <include reference="TcO-0e-h7F"/>
+                                    <include reference="OXM-sd-PCS"/>
+                                </mask>
+                            </variation>
+                        </group>
                     </items>
-                    <variation key="default">
-                        <mask key="items">
-                            <exclude reference="QSk-97-6SO"/>
-                            <exclude reference="TcO-0e-h7F"/>
-                            <exclude reference="kmx-xD-zzZ"/>
-                            <exclude reference="OXM-sd-PCS"/>
-                        </mask>
-                    </variation>
                     <variation key="device=watch42mm">
                         <mask key="items">
-                            <include reference="QSk-97-6SO"/>
-                            <include reference="TcO-0e-h7F"/>
-                            <include reference="kmx-xD-zzZ"/>
-                            <include reference="OXM-sd-PCS"/>
+                            <include reference="5T4-06-ln9"/>
                         </mask>
                     </variation>
                     <connections>
                         <outlet property="guessSlider" destination="kmx-xD-zzZ" id="fFe-gZ-W6A"/>
+                        <outlet property="playButton" destination="TcO-0e-h7F" id="Cap-BP-Uid"/>
                         <outlet property="playerGuess" destination="QSk-97-6SO" id="o2W-jv-jKk"/>
                         <outlet property="playerResult" destination="OXM-sd-PCS" id="UMf-Ee-TdM"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="331.28205128205133" y="296.84615384615387"/>
+            <point key="canvasLocation" x="331.28205128205133" y="348.28205128205133"/>
         </scene>
     </scenes>
 </document>
